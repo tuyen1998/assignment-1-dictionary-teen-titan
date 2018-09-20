@@ -1,5 +1,11 @@
-# Teen Titan
-### 1) Họ và tên: Cao Đức Huân
-###    MSV: 16021388
-### 2) Họ và tên: 
-###    MSV: 
+## Teen Titan
+<ul>
+	<li>
+      <b>Họ và tên: Cao Đức Huân<b>
+      <b>MSV: 16021388<b>
+  </li>
+  <li>
+      <b>Họ và tên: <b>
+      <b>MSV: <b>
+  </li> 
+</ul>
