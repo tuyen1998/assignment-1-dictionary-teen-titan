@@ -5,7 +5,7 @@
       <b>MSV: 16021388<b> <hr>
   </li>
   <li>
-      <b>Họ và tên: <b> <br>
-      <b>MSV: <b>
+      <b>Họ và tên: Hoàng Văn Thắng<b> <br>
+      <b>MSV: 16021417<b>
   </li> 
 </ul>
