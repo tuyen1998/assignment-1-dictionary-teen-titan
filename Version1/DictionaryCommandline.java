@@ -37,7 +37,7 @@ public class DictionaryCommandline {
             case 3:
                 break;
             default:
-                System.out.println("Chỉ được nhập từ 1- 2. Vui lòng nhập lại !!!");
+                System.out.println("Chỉ được nhập từ 1- 3. Vui lòng nhập lại !!!");
                 System.out.println("==================================");
         }
     }
