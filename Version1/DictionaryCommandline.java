@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class DictionaryCommandline {
     Dictionary dictionary= new Dictionary();
     DictionaryManagement dictionaryManagement= new DictionaryManagement();
+    Word w= new Word();
     int n;
     
     public DictionaryCommandline() {}
@@ -47,7 +48,7 @@ public class DictionaryCommandline {
         DictionaryCommandline dictionaryCommandline= new DictionaryCommandline();
         do {            
             dictionaryCommandline.dictionaryBasic();
-        } while (dictionaryCommandline.n != 3);        
+        } while (dictionaryCommandline.n != 3);
     }
 
 }
