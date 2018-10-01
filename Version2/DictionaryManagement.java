@@ -1,4 +1,3 @@
-package version2;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,7 +9,6 @@ public class DictionaryManagement {
     Dictionary dictionary= new Dictionary();
     DocGhiDuLieu docghi= new DocGhiDuLieu();
     Scanner scan = new Scanner(System.in);
-    Word wor= new Word();
     private int dem= 1;
     
     public DictionaryManagement() {
@@ -19,6 +17,7 @@ public class DictionaryManagement {
 // Phương thức insertFromCommandline()
     public void insertFromCommandline(){
         System.out.print("English: ");
+        Word wor= new Word();
         // Nhập word_target và word_explain
         wor.word_target= scan.nextLine();
         System.out.print("Vietnamese: ");
