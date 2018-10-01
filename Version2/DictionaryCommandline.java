@@ -1,5 +1,3 @@
-package version2;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -10,11 +8,12 @@ public class DictionaryCommandline {
     DictionaryManagement dictionaryManagement= new DictionaryManagement();
     DocGhiDuLieu docghi= new DocGhiDuLieu();
     private int dem= 1;
-    private int n;
+    int n;
     
     public DictionaryCommandline() {
         dictionary.arrayList= docghi.docFile("dictionaries.txt");
     }
+    
 // Phương thức showAllWords()
     public void showAllWords(){
         System.out.println("----------------------------------");
@@ -36,61 +35,62 @@ public class DictionaryCommandline {
 // Phương thức dictionaryAdvanced() 
     public void dictionaryAdvanced(){
         Scanner scan = new Scanner(System.in);
-        do {
-            System.out.println("Nhập 1: Thêm từ.");
-            System.out.println("Nhập 2: Xem toàn bộ từ đã thêm.");
-            System.out.println("Nhập 3: Xóa toàn bộ từ đã thêm.");
-            System.out.println("Nhập 4: Tìm từ đã thêm.");
-            System.out.println("Nhập 5: Kết thúc.");
-            System.out.print("Nhập số... ");
-            n= scan.nextInt(); 
+        System.out.println("Nhập 1: Thêm từ.");
+        System.out.println("Nhập 2: Xem toàn bộ từ đã thêm.");
+        System.out.println("Nhập 3: Xóa toàn bộ từ đã thêm.");
+        System.out.println("Nhập 4: Tìm từ đã thêm.");
+        System.out.println("Nhập 5: Kết thúc.");
+        System.out.print("Nhập số... ");
+        n= scan.nextInt();
+        System.out.println("==================================");
+        switch(n){
+        case 1:
+            dictionaryManagement.insertFromCommandline();
             System.out.println("==================================");
-            switch(n){
-            case 1:
-                dictionaryManagement.insertFromCommandline();
-                System.out.println("==================================");
-                break;
-            case 2:
-                if(dictionary.arrayList.isEmpty()){
-                    System.out.println("Danh sách trống, hãy thêm từ !");
-                }
-                else {
-                    this.showAllWords();
-                }
-                System.out.println("==================================");
-                break;
-            case 3:
-                if(dictionary.arrayList.isEmpty()){
-                    System.out.println("Danh sách trống, hãy thêm từ !");
-                }
-                else {
-                    dictionaryManagement.deleteFromCommandline();
-                    System.out.println("Xóa thành công!");
-                }
-                System.out.println("==================================");
-                break;
-            case 4:
-                if(dictionary.arrayList.isEmpty()){
-                    System.out.println("Danh sách trống, hãy thêm từ !");
-                }
-                else {
-                    dictionaryManagement.dictionaryLookup();
-                }
-                System.out.println("==================================");
-                break;
-            case 5:
-                break;
-            default:
-                System.out.println("Chỉ được nhập từ 1- 5. Vui lòng nhập lại !!!");
-                System.out.println("==================================");
+            break;
+        case 2:
+            dictionary.arrayList= docghi.docFile("dictionaries.txt");
+            if(dictionary.arrayList.isEmpty()){
+                System.out.println("Danh sách trống, hãy thêm từ !");
             }
-        } while (n!=5);
-        
+            else {
+                this.showAllWords();
+            }
+            System.out.println("==================================");
+            break;
+        case 3:
+            if(dictionary.arrayList.isEmpty()){
+                System.out.println("Danh sách trống, hãy thêm từ !");
+            }
+            else {
+                dictionaryManagement.deleteFromCommandline();
+                System.out.println("Xóa thành công!");
+            }
+            System.out.println("==================================");
+            break;
+        case 4:
+            if(dictionary.arrayList.isEmpty()){
+                System.out.println("Danh sách trống, hãy thêm từ !");
+            }
+            else {
+                dictionaryManagement.dictionaryLookup();
+            }
+            System.out.println("==================================");
+            break;
+        case 5:
+            System.out.println(" ------- Hẹn gặp lại !!! --------");
+            System.out.println("==================================");
+            break;
+        default:
+            System.out.println("Chỉ được nhập từ 1- 5. Vui lòng nhập lại !!!");
+            System.out.println("==================================");
+        }
     }
 // Phương thức main()
     public static void main(String[] args) {
         DictionaryCommandline dictionaryCommandline= new DictionaryCommandline();
-        dictionaryCommandline.dictionaryAdvanced();
+        do {            
+            dictionaryCommandline.dictionaryAdvanced();
+        } while (dictionaryCommandline.n!= 5);
     }
-
 }
