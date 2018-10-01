@@ -42,7 +42,7 @@ public class DictionaryManagement {
         // Xóa toàn bộ từ trong arraylist
         dictionary.arrayList.removeAll(dictionary.arrayList);
         // Ghi lại
-        docghi.ghiFile(dictionary.arrayList, "File.dat");
+        docghi.ghiFile(dictionary.arrayList, "dictionaries.txt");
     }
 // Hàm tìm kiếm
    public void dictionaryLookup(){
