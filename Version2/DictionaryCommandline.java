@@ -1,3 +1,4 @@
+import java.io.Console;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -19,6 +20,7 @@ public class DictionaryCommandline {
         System.out.println("----------------------------------");
         System.out.println("No   |English    |Vietnamese");
         System.out.println("----------------------------------");
+        Word word= new Word();
         // Sắp xếp
         Collections.sort(dictionary.arrayList, new Comparator<Word>() {
             public int compare(Word word0, Word word1) {
@@ -39,7 +41,8 @@ public class DictionaryCommandline {
         System.out.println("Nhập 2: Xem toàn bộ từ đã thêm.");
         System.out.println("Nhập 3: Xóa toàn bộ từ đã thêm.");
         System.out.println("Nhập 4: Tìm từ đã thêm.");
-        System.out.println("Nhập 5: Kết thúc.");
+        System.out.println("Nhập 5: Sửa từ.");
+        System.out.println("Nhập 6: Kết thúc.");
         System.out.print("Nhập số... ");
         n= scan.nextInt();
         System.out.println("==================================");
@@ -64,7 +67,6 @@ public class DictionaryCommandline {
             }
             else {
                 dictionaryManagement.deleteFromCommandline();
-                System.out.println("Xóa thành công!");
             }
             System.out.println("==================================");
             break;
@@ -73,16 +75,28 @@ public class DictionaryCommandline {
                 System.out.println("Danh sách trống, hãy thêm từ !");
             }
             else {
+                System.out.print("Nhập từ cần tìm: ");
                 dictionaryManagement.dictionaryLookup();
             }
             System.out.println("==================================");
             break;
         case 5:
+            if(dictionary.arrayList.isEmpty()){
+                System.out.println("Danh sách trống, hãy thêm từ !");
+            }
+            else {
+                this.showAllWords();
+                System.out.println("Nhập từ cần Sửa: ");
+                dictionaryManagement.suaTu();
+            }
+            System.out.println("==================================");
+            break;
+        case 6:
             System.out.println(" ------- Hẹn gặp lại !!! --------");
             System.out.println("==================================");
             break;
         default:
-            System.out.println("Chỉ được nhập từ 1- 5. Vui lòng nhập lại !!!");
+            System.out.println("Chỉ được nhập từ 1- 6. Vui lòng nhập lại !!!");
             System.out.println("==================================");
         }
     }
@@ -91,6 +105,6 @@ public class DictionaryCommandline {
         DictionaryCommandline dictionaryCommandline= new DictionaryCommandline();
         do {            
             dictionaryCommandline.dictionaryAdvanced();
-        } while (dictionaryCommandline.n!= 5);
+        } while (dictionaryCommandline.n!= 6);
     }
 }
