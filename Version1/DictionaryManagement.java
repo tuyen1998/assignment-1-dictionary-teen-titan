@@ -1,5 +1,7 @@
 package version1;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class DictionaryManagement {
@@ -33,6 +35,12 @@ public class DictionaryManagement {
         System.out.println("----------------------------------");
         System.out.println("No   |English    |Vietnamese");
         System.out.println("----------------------------------");
+        // Sắp xếp
+        Collections.sort(dictionary.arrayList, new Comparator<Word>() {
+            public int compare(Word word0, Word word1) {
+                return (word0.getWord_target().compareTo(word1.getWord_target()));
+            }
+        });
         for(Word i: dictionary.arrayList){
             Word w  = (Word) i;
             System.out.printf("%-6d%-12s%-12s", dem++, w.getWord_target(),w.getWord_explain());
