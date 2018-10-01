@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class DictionaryCommandline {
     Dictionary dictionary= new Dictionary();
     DictionaryManagement dictionaryManagement= new DictionaryManagement();
-    Word w= new Word();
     int n;
     
     public DictionaryCommandline() {}
@@ -35,27 +34,20 @@ public class DictionaryCommandline {
                 System.out.println("==================================");
                 break;
             case 3:
+                System.out.println(" ------- Hẹn gặp lại !!! --------");
+                System.out.println("==================================");
                 break;
             default:
                 System.out.println("Chỉ được nhập từ 1- 3. Vui lòng nhập lại !!!");
                 System.out.println("==================================");
         }
     }
-
-// Vòng lặp
-    public void loof(){
-        System.out.println();
-        while(n== 1 || n== 2){
-            this.dictionaryBasic();
-        }
-        System.out.println();
-    }
-    
 // Phương thức main()
     public static void main(String[] args) {
         DictionaryCommandline dictionaryCommandline= new DictionaryCommandline();
-        dictionaryCommandline.dictionaryBasic();
-        dictionaryCommandline.loof();
+        do {            
+            dictionaryCommandline.dictionaryBasic();
+        } while (dictionaryCommandline.n != 3);        
     }
 
 }
