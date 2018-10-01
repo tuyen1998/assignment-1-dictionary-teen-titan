@@ -13,9 +13,6 @@
       <b>DictionaryCommandline.java</b><br><hr>
   </li>
 	<li>
-      <b>DocGhiDuLieu.java</b><br>
+      <b>DocGhiDuLieu.java</b><br><hr>
   </li>
- <li>
-      <b>BanCapNhatVersion2.jar</b><hr>
-  </li>	
 </ul>
