@@ -1,11 +1,9 @@
-package version2;
 
 import java.io.Serializable;
 import java.util.Objects;
 
 public class Word implements Serializable{ 
 // Serializable chuyển đổi các đối tượng thành stream.
-    protected int ID;
     protected String word_target;
     protected String word_explain;
 // Khởi tạo không đối tượng
