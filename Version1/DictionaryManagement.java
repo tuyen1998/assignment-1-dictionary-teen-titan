@@ -6,13 +6,13 @@ import java.util.Scanner;
 
 public class DictionaryManagement {
     Dictionary dictionary= new Dictionary();
+    Scanner scan = new Scanner(System.in);
     int dem= 1;
     
     public DictionaryManagement() {}
     
 // Phương thức insertFromCommandline()
-    public void insertFromCommandline(){
-        Scanner scan = new Scanner(System.in);
+public void insertFromCommandline(){
         int n = 0;
         System.out.print("English: ");
         Word wor= new Word();
@@ -21,7 +21,7 @@ public class DictionaryManagement {
         System.out.print("Vietnamese: ");
         wor.word_explain= scan.nextLine();
         if(wor.word_target.isEmpty()|| wor.word_explain.isEmpty()){
-            System.out.println("Không được bỏ trống !");
+            System.out.println("--- Không được bỏ trống ! ---");
         }
         else {
             if(dictionary.arrayList.isEmpty()){
@@ -30,8 +30,7 @@ public class DictionaryManagement {
                 wor.setWord_explain(wor.word_explain);
                 // Thêm vào arraylist
                 dictionary.arrayList.add(wor);
-                // Ghi vào file
-                System.out.println("Thêm từ thành công!");
+                System.out.println("--- Thêm từ thành công! ---");
             }
             else {
                 for(Word i: dictionary.arrayList){
@@ -54,16 +53,12 @@ public class DictionaryManagement {
                         if(n== 1){
                             w.word_target= wor.word_target;
                             w.word_explain= wor.word_explain;
-                            System.out.println("Thay thế thành công!");
+                            System.out.println("--- Thay thế thành công! ---");
                         }
                         else if(n== 2){
                             // Truyền giá trị
                             wor.setWord_target(wor.word_target);
                             wor.setWord_explain(wor.word_explain);
-                            // Thêm vào arraylist
-                            dictionary.arrayList.add(wor);
-                            // Ghi vào file
-                            System.out.println("Thêm từ thành công!");
                         }
                         else if(n== 3){
                             System.out.println("--- Bạn vừa hủy thao tác !!! ---");
@@ -81,10 +76,10 @@ public class DictionaryManagement {
                 }
                 dem= 1;
                 // Ghi vào file
-                if(n== 0){
+                if(n== 0 || n== 2){
                     // Thêm vào arraylist
                     dictionary.arrayList.add(wor);
-                    System.out.println("Thêm từ thành công!");
+                    System.out.println("--- Thêm từ thành công! ---");
                 }
             }
         }
