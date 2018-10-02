@@ -27,7 +27,7 @@ public class DictionaryManagement {
         System.out.print("Vietnamese: ");
         wor.word_explain= scan.nextLine();
         if(wor.word_target.isEmpty()|| wor.word_explain.isEmpty()){
-            System.out.println("Không được bỏ trống !");
+            System.out.println("--- Không được bỏ trống ! ---");
         }
         else {
             if(dictionary.arrayList.isEmpty()){
@@ -38,7 +38,7 @@ public class DictionaryManagement {
                 dictionary.arrayList.add(wor);
                 // Ghi vào file
                 docghi.ghiFile(dictionary.arrayList, "dictionaries.txt");
-                System.out.println("Thêm từ thành công!");
+                System.out.println("--- Thêm từ thành công! ---");
             }
             else {
                 for(Word i: dictionary.arrayList){
@@ -62,17 +62,12 @@ public class DictionaryManagement {
                             w.word_target= wor.word_target;
                             w.word_explain= wor.word_explain;
                             docghi.ghiFile(dictionary.arrayList, "dictionaries.txt");
-                            System.out.println("Thay thế thành công!");
+                            System.out.println("--- Thay thế thành công! ---");
                         }
                         else if(n== 2){
                             // Truyền giá trị
                             wor.setWord_target(wor.word_target);
                             wor.setWord_explain(wor.word_explain);
-                            // Thêm vào arraylist
-                            dictionary.arrayList.add(wor);
-                            // Ghi vào file
-                            docghi.ghiFile(dictionary.arrayList, "dictionaries.txt");
-                            System.out.println("Thêm từ thành công!");
                         }
                         else if(n== 3){
                             System.out.println("--- Bạn vừa hủy thao tác !!! ---");
@@ -90,11 +85,11 @@ public class DictionaryManagement {
                 }
                 dem= 1;
                 // Ghi vào file
-                if(n== 0){
+                if(n== 0 || n== 2){
                     // Thêm vào arraylist
                     dictionary.arrayList.add(wor);
                     docghi.ghiFile(dictionary.arrayList, "dictionaries.txt");
-                    System.out.println("Thêm từ thành công!");
+                    System.out.println("--- Thêm từ thành công! ---");
                 }
             }
         }
@@ -103,22 +98,39 @@ public class DictionaryManagement {
 // Phương thức xóa từ đã nhập
     public void deleteFromCommandline(){
         // Xóa toàn bộ từ trong arraylist
-        dictionary.arrayList.removeAll(dictionary.arrayList);
-        // Ghi lại
-        docghi.ghiFile(dictionary.arrayList, "dictionaries.txt");
-        System.out.println("Xóa thành công!");
+        System.out.println("Bạn chắc chắn chứ");
+        System.out.println("Nhập 1: Đồng ý.");
+        System.out.println("Nhập 2: Hủy thao tác");
+        System.out.print("Nhập... ");
+        int nhap= scan.nextInt();
+        switch(nhap){
+            case 1:
+                dictionary.arrayList.removeAll(dictionary.arrayList);
+                // Ghi lại
+                docghi.ghiFile(dictionary.arrayList, "dictionaries.txt");
+                System.out.println("--- Xóa thành công ! ---");
+                break;
+            case 2:
+                System.out.println("--- Bạn vừa hủy thao tác !!! ---");
+                break;
+            default:
+                System.out.println("Chỉ được nhập từ 1- 2. Vui lòng nhập lại !!!");
+                System.out.println("==================================");
+        }
     }
 // Hàm sửa từ
     public void suaTu(){
         int n = 0;
         System.out.print("English: ");
+        String tusua= scan.nextLine();
         Word wor= new Word();
-        // Nhập word_target
+        System.out.println("Sửa thành: ");
+        System.out.print("English: ");
         wor.word_target= scan.nextLine();
         System.out.print("Vietnamese: ");
         wor.word_explain= scan.nextLine();
-        if(wor.word_target.isEmpty() || wor.word_explain.isEmpty()){
-            System.out.println("Không được bỏ trống !");
+        if(tusua.isEmpty() || wor.word_target.isEmpty() || wor.word_explain.isEmpty()){
+            System.out.println("--- Không được bỏ trống ! ---");
         }
         else {
             if(dictionary.arrayList.isEmpty()){
@@ -127,16 +139,16 @@ public class DictionaryManagement {
             else {
                 for(Word i: dictionary.arrayList){
                     Word w  = (Word) i;
-                    if(wor.word_target.toUpperCase().matches(w.getWord_target().toUpperCase())){
+                    if(tusua.toUpperCase().matches(w.getWord_target().toUpperCase())){
                         System.out.println("==================================");
-                        System.out.println("Bạn muốn sửa từ bên dưới : ");
+                        System.out.println("Áp dụng sửa cho từ : ");
                         System.out.println("----------------------------------");
                         System.out.println("No   |English    |Vietnamese");
                         System.out.println("----------------------------------");
                         System.out.printf("%-6d%-12s%-12s", dem++, w.getWord_target(),w.getWord_explain());
                         System.out.println();
                         System.out.println("----------------------------------");
-                        System.out.println("Nhập 1: Sửa.");
+                        System.out.println("Nhập 1: Đồng ý.");
                         System.out.println("Nhập 2: Hủy thao tác.");
                         System.out.print("Nhập... ");
                         n= scan.nextInt();
@@ -165,7 +177,7 @@ public class DictionaryManagement {
        // Nhập word_target và word_explain
        String seach= scan.nextLine();
         if(seach.isEmpty()){
-            System.out.println("Không được bỏ trống !");
+            System.out.println("--- Không được bỏ trống ! ---");
         }
         else {
             System.out.println("----------------------------------");
