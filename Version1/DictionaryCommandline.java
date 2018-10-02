@@ -10,12 +10,12 @@ public class DictionaryCommandline {
     int n;
     
     public DictionaryCommandline() {}
-    
-// Phương thức showAllWords()
+
+    // Phương thức showAllWords()
     public void showAllWords(){
         dictionaryManagement.hienThiTu();
     }
-// Phương thức dictionaryBasic()
+    // Phương thức dictionaryBasic()
     public void dictionaryBasic(){
         Scanner scan = new Scanner(System.in);
         System.out.println("Nhập 1: Thêm từ.");
@@ -39,11 +39,11 @@ public class DictionaryCommandline {
                 System.out.println("==================================");
                 break;
             default:
-                System.out.println("Chỉ được nhập từ 1- 3. Vui lòng nhập lại !!!");
+                System.out.println("--- Vui lòng nhập lại ---");
                 System.out.println("==================================");
         }
     }
-// Phương thức main()
+    // Phương thức main()
     public static void main(String[] args) {
         DictionaryCommandline dictionaryCommandline= new DictionaryCommandline();
         do {            
