@@ -20,7 +20,6 @@ public class DictionaryCommandline {
         System.out.println("----------------------------------");
         System.out.println("No   |English    |Vietnamese");
         System.out.println("----------------------------------");
-        Word word= new Word();
         // Sắp xếp
         Collections.sort(dictionary.arrayList, new Comparator<Word>() {
             public int compare(Word word0, Word word1) {
@@ -86,7 +85,7 @@ public class DictionaryCommandline {
             }
             else {
                 this.showAllWords();
-                System.out.println("Nhập từ cần Sửa: ");
+                System.out.println("Nhập từ cần sửa: ");
                 dictionaryManagement.suaTu();
             }
             System.out.println("==================================");
