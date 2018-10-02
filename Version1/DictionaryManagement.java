@@ -9,7 +9,7 @@ public class DictionaryManagement {
     Scanner scan = new Scanner(System.in);
     int dem= 1;
     
-    public DictionaryManagement() {}
+public DictionaryManagement() {}
     
 // Phương thức insertFromCommandline()
 public void insertFromCommandline(){
