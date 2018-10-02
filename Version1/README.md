@@ -10,9 +10,6 @@
       <b>DictionaryManagement.java</b><br>
   </li>
    <li>
-      <b>DictionaryCommandline.java</b><br>
+      <b>DictionaryCommandline.java</b><hr>
   </li>
- <li>
-      <b>Version1.jar</b><hr>
-  </li>	
 </ul>
