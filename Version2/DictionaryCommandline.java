@@ -61,6 +61,7 @@ public class DictionaryCommandline {
             System.out.println("==================================");
             break;
         case 3:
+            dictionary.arrayList= docghi.docFile("dictionaries.txt");
             if(dictionary.arrayList.isEmpty()){
                 System.out.println("Danh sách trống, hãy thêm từ !");
             }
@@ -70,6 +71,7 @@ public class DictionaryCommandline {
             System.out.println("==================================");
             break;
         case 4:
+            dictionary.arrayList= docghi.docFile("dictionaries.txt");
             if(dictionary.arrayList.isEmpty()){
                 System.out.println("Danh sách trống, hãy thêm từ !");
             }
@@ -80,12 +82,13 @@ public class DictionaryCommandline {
             System.out.println("==================================");
             break;
         case 5:
+            dictionary.arrayList= docghi.docFile("dictionaries.txt");
             if(dictionary.arrayList.isEmpty()){
                 System.out.println("Danh sách trống, hãy thêm từ !");
             }
             else {
                 this.showAllWords();
-                System.out.println("Nhập từ cần sửa: ");
+                System.out.println("Nhập từ cần Sửa: ");
                 dictionaryManagement.suaTu();
             }
             System.out.println("==================================");
