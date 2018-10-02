@@ -65,7 +65,7 @@ public void insertFromCommandline(){
                             break;
                         }
                         else {
-                            System.out.println("Chỉ được nhập từ 1- 3. Vui lòng nhập lại !!!");
+                            System.out.println("--- Vui lòng nhập lại !!! ---");
                         }
                     }
                     else{
