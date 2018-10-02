@@ -114,8 +114,8 @@ public class DictionaryManagement {
                 System.out.println("--- Bạn vừa hủy thao tác !!! ---");
                 break;
             default:
-                System.out.println("Chỉ được nhập từ 1- 2. Vui lòng nhập lại !!!");
-                System.out.println("==================================");
+                System.out.println("--- Vui lòng nhập lại !!! ---");
+                break;
         }
     }
 // Hàm sửa từ
@@ -157,14 +157,14 @@ public class DictionaryManagement {
                             w.word_target= wor.word_target;
                             w.word_explain= wor.word_explain;
                             docghi.ghiFile(dictionary.arrayList, "dictionaries.txt");
-                            System.out.println("Sửa thành công !");
+                            System.out.println("-----  Sửa thành công !  ------");
                         }
                         else if(n== 2){
                             System.out.println("--- Bạn vừa hủy thao tác !!! ---");
                             break;
                         }
                         else {
-                            System.out.println("Chỉ được nhập từ 1- 2. Vui lòng nhập lại !!!");
+                            System.out.println("----- Vui lòng nhập lại!!! -----");
                         }
                     }
                 }
@@ -175,7 +175,7 @@ public class DictionaryManagement {
 // Hàm tìm kiếm
    public void dictionaryLookup(){
        // Nhập word_target và word_explain
-       String seach= scan.nextLine();
+        String seach= scan.nextLine();
         if(seach.isEmpty()){
             System.out.println("--- Không được bỏ trống ! ---");
         }
