@@ -1,5 +1,5 @@
-<h2> Version1: Phiên bản từ điển command line sơ khai. </h2><hr>
-<b>I. Word.java<br></b>
+<h1 align="center"> Version1: Phiên bản từ điển command line sơ khai. </h2>
+<h3>I. Word.java<br></h3>
 <ul>
 	<li>
 		1. Các thuộc tính:
@@ -16,7 +16,7 @@
 		</ol>
   	</li>
 </ul> <hr>
-<b>II. Dictionary.java<br></b>
+<h3>II. Dictionary.java<br></h3>
 <ul>
   	<li>
       		1. Mảng Word:
@@ -25,7 +25,7 @@
 		</ol>
   	</li>
 </ul> <hr>
-<b>III. DictionaryManagement.java<br></b>
+<h3>III. DictionaryManagement.java<br></h3>
 <ul>
   	<li>
 		1. Phương thức khởi tạo không đối tượng:
@@ -46,7 +46,7 @@
 		</ol>
   	</li>
 </ul> <hr>
-<b>IV. DictionaryCommandline.java</b>
+<h3>IV. DictionaryCommandline.java</h3>
 <ul>
    	<li>
       		1. Hàm showAllWords():
