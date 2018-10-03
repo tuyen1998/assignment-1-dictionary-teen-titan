@@ -1,7 +1,7 @@
 <h1 align="center"> 
 	Version1: Phiên bản từ điển command line sơ khai.
 </h1>
-![](https://raw.githubusercontent.com/UET-INT2204-12-fall-18/assignment-1-dictionary-teen-titan/master/Version1/Version1.png) (&lt;img /&gt;)
+![alt](http://http://mikemclin.net/mmwp/wp-content/uploads/2013/03/markdown-syntax-language.png)
 <h3>I. Word.java<br></h3>
 <ul>
 	<li>
