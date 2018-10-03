@@ -1,7 +1,6 @@
 ## Version1: Phiên bản từ điển command line sơ khai.
-<b>
 <ul>
-	Word.java<br>
+<b>I.Word.java<br></b>
 	<li>
 		1. Các thuộc tính:
 		<ol>
@@ -10,20 +9,20 @@
 		</ol>
 		2. Phương thức Getter và Setter:
 		<ol>
-			public String getWord_target()
-			public void setWord_target(String word_target)
-			public String getWord_explain()
-			public void setWord_explain(String word_explain)
+			public String getWord_target()<br>
+			public void setWord_target(String word_target)<br>
+			public String getWord_explain()<br>
+			public void setWord_explain(String word_explain)<br>
 		</ol>
   	</li>
-	Dictionary.java<br>
+<b>II.Dictionary.java<br></b>
   	<li>
       		1. Mảng Word
 		<ol>
 			ArrayList<Word> arrayList= new ArrayList<Word>()
 		</ol>
   	</li>
-	DictionaryManagement.java<br>
+<b>III.DictionaryManagement.java<br></b>
   	<li>
 		1. Phương thức khởi tạo không đối tượng
 		<ol>
@@ -42,7 +41,7 @@
 			- Hiển thị toàn bộ từ đã thêm.
 		</ol>
   	</li>
-	DictionaryCommandline.java<hr>
+<b>IV.DictionaryCommandline.java<hr></b>
    	<li>
       		1. Hàm showAllWords()
 		<ol>
