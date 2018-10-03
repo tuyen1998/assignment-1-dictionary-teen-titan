@@ -1,4 +1,4 @@
-import java.io.Console;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -12,7 +12,7 @@ public class DictionaryCommandline {
     int n;
     
     public DictionaryCommandline() {
-        dictionary.arrayList= docghi.docFile("dictionaries.txt");
+        dictionary.arrayList= docghi.docFile();
     }
     
 // Phương thức showAllWords()
@@ -33,6 +33,9 @@ public class DictionaryCommandline {
         }
         dem= 1;
     }
+    public void dictionarySearcher(){
+        dictionaryManagement.dictionaryLookup();
+    }
 // Phương thức dictionaryAdvanced() 
     public void dictionaryAdvanced(){
         Scanner scan = new Scanner(System.in);
@@ -51,7 +54,7 @@ public class DictionaryCommandline {
             System.out.println("==================================");
             break;
         case 2:
-            dictionary.arrayList= docghi.docFile("dictionaries.txt");
+            dictionary.arrayList= docghi.docFile();
             if(dictionary.arrayList.isEmpty()){
                 System.out.println("Danh sách trống, hãy thêm từ !");
             }
@@ -61,7 +64,7 @@ public class DictionaryCommandline {
             System.out.println("==================================");
             break;
         case 3:
-            dictionary.arrayList= docghi.docFile("dictionaries.txt");
+            dictionary.arrayList= docghi.docFile();
             if(dictionary.arrayList.isEmpty()){
                 System.out.println("Danh sách trống, hãy thêm từ !");
             }
@@ -71,18 +74,18 @@ public class DictionaryCommandline {
             System.out.println("==================================");
             break;
         case 4:
-            dictionary.arrayList= docghi.docFile("dictionaries.txt");
+            dictionary.arrayList= docghi.docFile();
             if(dictionary.arrayList.isEmpty()){
                 System.out.println("Danh sách trống, hãy thêm từ !");
             }
             else {
                 System.out.print("Nhập từ cần tìm: ");
-                dictionaryManagement.dictionaryLookup();
+                this.dictionarySearcher();
             }
             System.out.println("==================================");
             break;
         case 5:
-            dictionary.arrayList= docghi.docFile("dictionaries.txt");
+            dictionary.arrayList= docghi.docFile();
             if(dictionary.arrayList.isEmpty()){
                 System.out.println("Danh sách trống, hãy thêm từ !");
             }
