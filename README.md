@@ -20,8 +20,8 @@
 <h3>II. DictionaryManagement.java<br></h3>
 <ul>
   	<li>
-		1. Version1: Phiên bản từ điển command line sơ khai.
-		--------------------------------------------- ![alt tag](https://raw.githubusercontent.com/UET-INT2204-12-fall-18/assignment-1-dictionary-teen-titan/master/Version1/Version1.png) ---------------------------------------------
+		1. Version1: Phiên bản từ điển command line sơ khai.<br>
+		--------------------------------------------- ![alt tag](https://raw.githubusercontent.com/UET-INT2204-12-fall-18/assignment-1-dictionary-teen-titan/master/Version1/Version1.png) ---------------------------------------------<br>
 		<ol>
 			Link: https://github.com/UET-INT2204-12-fall-18/assignment-1-dictionary-teen-titan/tree/master/Version1
 		</ol>
