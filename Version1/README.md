@@ -1,6 +1,6 @@
 ## Version1: Phiên bản từ điển command line sơ khai.
-<ul>
 <b>I.Word.java<br></b>
+<ul>
 	<li>
 		1. Các thuộc tính:
 		<ol>
@@ -15,14 +15,18 @@
 			public void setWord_explain(String word_explain)<br>
 		</ol>
   	</li>
+</ul>
 <b>II.Dictionary.java<br></b>
+<ul>
   	<li>
       		1. Mảng Word
 		<ol>
 			ArrayList<Word> arrayList= new ArrayList<Word>()
 		</ol>
   	</li>
+</ul>
 <b>III.DictionaryManagement.java<br></b>
+<ul>
   	<li>
 		1. Phương thức khởi tạo không đối tượng
 		<ol>
@@ -41,7 +45,9 @@
 			- Hiển thị toàn bộ từ đã thêm.
 		</ol>
   	</li>
+</ul>
 <b>IV.DictionaryCommandline.java<hr></b>
+<ul>
    	<li>
       		1. Hàm showAllWords()
 		<ol>
@@ -59,6 +65,5 @@
 		<ol>
 			public static void main(String[] args)
 		</ol>
-  	</li>
+  	</li>	
 </ul>
-</b>
