@@ -1,5 +1,5 @@
-<p align="center" size="20">
-	<b>Version1: Phiên bản từ điển command line sơ khai.</b>
+<p align="middle">
+	<h2>Version1: Phiên bản từ điển command line sơ khai.</h2>
 </p>
 <b>I. Word.java<br></b>
 <ul>
