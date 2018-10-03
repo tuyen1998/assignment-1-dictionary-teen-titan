@@ -8,10 +8,10 @@ public class DictionaryManagement {
     Dictionary dictionary= new Dictionary();
     Scanner scan = new Scanner(System.in);
     int dem= 1;
+// Phương thức khởi tạo không tham số
+    public DictionaryManagement() {}
     
-public DictionaryManagement() {}
-    
-// Phương thức insertFromCommandline()
+// Hàm insertFromCommandline()
 public void insertFromCommandline(){
         int n = 0;
         System.out.print("English: ");
@@ -65,7 +65,7 @@ public void insertFromCommandline(){
                             break;
                         }
                         else {
-                            System.out.println("--- Vui lòng nhập lại !!! ---");
+                            System.out.println("Chỉ được nhập từ 1- 3. Vui lòng nhập lại !!!");
                         }
                     }
                     else{
@@ -84,6 +84,7 @@ public void insertFromCommandline(){
             }
         }
     }
+// Hàm hienThiTu() co chuc nang hien thi toan bo tu da them
     public void hienThiTu(){
         System.out.println("----------------------------------");
         System.out.println("No   |English    |Vietnamese");
