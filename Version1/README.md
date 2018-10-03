@@ -7,6 +7,8 @@
 			String word_target<br>
     			String word_explain<br>
 		</ol>
+  	</li>
+	<li>
 		2. Phương thức Getter và Setter:
 		<ol>
 			public String getWord_target()<br>
@@ -32,12 +34,16 @@
 		<ol>
 			public DictionaryManagement()
 		</ol>
+  	</li>
+	<li>
 		2. Hàm insertFromCommandline():
 		<ol>
 			public void insertFromCommandline()<br>
 			Chức năng:<br>
 			- Nhập liệu.
 		</ol>
+  	</li>
+	<li>
 		3. Hàm hienThiTu():
 		<ol>
 			public void hienThiTu()<br>
@@ -55,12 +61,16 @@
 			Chức năng:<br>
 			- Gọi lại hàm hienThiTu() của class DictionaryManagement để hiển thị toàn bộ từ đã thêm.
 		</ol>
+  	</li>
+	<li>
 		2. Hàm dictionaryBasic():
 		<ol>
 			public void dictionaryBasic()<br>
 			Chức năng:<br>
 			- Chức năng gọi hàm insertFromCommandline() và showAllWords().
 		</ol>
+  	</li>	
+	<li>
 		3. Main():
 		<ol>
 			public static void main(String[] args)
