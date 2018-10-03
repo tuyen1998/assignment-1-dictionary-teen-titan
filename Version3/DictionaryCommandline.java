@@ -15,7 +15,7 @@ public class DictionaryCommandline {
         dictionary.arrayList= docghi.docFile();
     }
     
-// Phương thức showAllWords()
+// Hàm showAllWords() gọi lại hàm hienThiTu() của class DictionaryManagement để hiển thị toàn bộ từ đã thêm.
     public void showAllWords(){
         System.out.println("----------------------------------");
         System.out.println("No   |English    |Vietnamese");
@@ -33,10 +33,11 @@ public class DictionaryCommandline {
         }
         dem= 1;
     }
+// Hàm dictionarySearcher() có chức năng tìm kiếm các từ
     public void dictionarySearcher(){
         dictionaryManagement.dictionaryLookup();
     }
-// Phương thức dictionaryAdvanced() 
+// Hàm dictionaryAdvanced() 
     public void dictionaryAdvanced(){
         Scanner scan = new Scanner(System.in);
         System.out.println("Nhập 1: Thêm từ.");
