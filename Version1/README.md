@@ -19,7 +19,7 @@
 <b>II.Dictionary.java<br></b>
 <ul>
   	<li>
-      		1. Mảng Word
+      		1. Mảng Word:
 		<ol>
 			ArrayList<Word> arrayList= new ArrayList<Word>()
 		</ol>
@@ -28,17 +28,17 @@
 <b>III.DictionaryManagement.java<br></b>
 <ul>
   	<li>
-		1. Phương thức khởi tạo không đối tượng
+		1. Phương thức khởi tạo không đối tượng:
 		<ol>
 			public DictionaryManagement()
 		</ol>
-		2. Hàm insertFromCommandline()
+		2. Hàm insertFromCommandline():
 		<ol>
 			public void insertFromCommandline()<br>
 			Chức năng:<br>
 			- Nhập liệu.
 		</ol>
-		3. Hàm hienThiTu()
+		3. Hàm hienThiTu():
 		<ol>
 			public void hienThiTu()<br>
 			Chức năng:<br>
@@ -49,19 +49,19 @@
 <b>IV.DictionaryCommandline.java</b>
 <ul>
    	<li>
-      		1. Hàm showAllWords()
+      		1. Hàm showAllWords():
 		<ol>
 			public void showAllWords()<br>
 			Chức năng:<br>
 			- Gọi lại hàm hienThiTu() của class DictionaryManagement để hiển thị toàn bộ từ đã thêm.
 		</ol>
-		2. Hàm dictionaryBasic()
+		2. Hàm dictionaryBasic():
 		<ol>
 			public void dictionaryBasic()<br>
 			Chức năng:<br>
 			- Chức năng gọi hàm insertFromCommandline() và showAllWords().
 		</ol>
-		3. Main()
+		3. Main():
 		<ol>
 			public static void main(String[] args)
 		</ol>
