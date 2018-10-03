@@ -1,4 +1,7 @@
-<h1 align="center"> Version1: Phiên bản từ điển command line sơ khai. </h1>
+<h1 align="center"> 
+	Version1: Phiên bản từ điển command line sơ khai. 
+	![Atom](https://github.com/UET-INT2204-12-fall-18/assignment-1-dictionary-teen-titan/blob/master/Version1/Version1.png)
+</h1>
 <h3>I. Word.java<br></h3>
 <ul>
 	<li>
