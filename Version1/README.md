@@ -67,4 +67,4 @@
 		</ol>
   	</li>	
 </ul> <hr>
-<h1 align="center"> Version2: Phiên bản từ điển command line cải tiến lần 1.(Trang tiếp theo) </h1>
+<h2 align="center"> Version2: Phiên bản từ điển command line cải tiến lần 1.(Trang tiếp theo) </h2>
