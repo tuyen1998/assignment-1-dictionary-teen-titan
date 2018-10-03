@@ -1,4 +1,7 @@
 <h1 align="center"> Version3: Phiên bản từ điển command line cải tiến lần 2. </h1>
+
+--------------------------------------------- ![alt tag](https://raw.githubusercontent.com/UET-INT2204-12-fall-18/assignment-1-dictionary-teen-titan/master/Version3/Version3.png) ---------------------------------------------
+
 <h3>I. Word.java<br></h3>
 <ul>
 	<li>
