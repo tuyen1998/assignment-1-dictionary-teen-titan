@@ -1,4 +1,4 @@
-<h1 align="center"> Version1: Phiên bản từ điển command line sơ khai. </h2>
+<h1 align="center"> Version1: Phiên bản từ điển command line sơ khai. </h1>
 <h3>I. Word.java<br></h3>
 <ul>
 	<li>
@@ -67,3 +67,4 @@
 		</ol>
   	</li>	
 </ul> <hr>
+<h1 align="center"> Version2: Phiên bản từ điển command line cải tiến lần 1.(Trang tiếp theo) </h1>
