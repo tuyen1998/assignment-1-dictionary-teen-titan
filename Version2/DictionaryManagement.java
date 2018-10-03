@@ -15,7 +15,7 @@ public class DictionaryManagement {
     private int dem= 1;
     
     public DictionaryManagement() {
-        dictionary.arrayList= docghi.docFile("dictionaries.txt");
+        dictionary.arrayList= docghi.docFile();
     }
 // Phương thức insertFromCommandline()
     public void insertFromCommandline(){
@@ -37,7 +37,7 @@ public class DictionaryManagement {
                 // Thêm vào arraylist
                 dictionary.arrayList.add(wor);
                 // Ghi vào file
-                docghi.ghiFile(dictionary.arrayList, "dictionaries.txt");
+                docghi.ghiFile(dictionary.arrayList);
                 System.out.println("--- Thêm từ thành công! ---");
             }
             else {
@@ -61,7 +61,7 @@ public class DictionaryManagement {
                         if(n== 1){
                             w.word_target= wor.word_target;
                             w.word_explain= wor.word_explain;
-                            docghi.ghiFile(dictionary.arrayList, "dictionaries.txt");
+                            docghi.ghiFile(dictionary.arrayList);
                             System.out.println("--- Thay thế thành công! ---");
                         }
                         else if(n== 2){
@@ -88,7 +88,7 @@ public class DictionaryManagement {
                 if(n== 0 || n== 2){
                     // Thêm vào arraylist
                     dictionary.arrayList.add(wor);
-                    docghi.ghiFile(dictionary.arrayList, "dictionaries.txt");
+                    docghi.ghiFile(dictionary.arrayList);
                     System.out.println("--- Thêm từ thành công! ---");
                 }
             }
@@ -107,7 +107,7 @@ public class DictionaryManagement {
             case 1:
                 dictionary.arrayList.removeAll(dictionary.arrayList);
                 // Ghi lại
-                docghi.ghiFile(dictionary.arrayList, "dictionaries.txt");
+                docghi.ghiFile(dictionary.arrayList);
                 System.out.println("--- Xóa thành công ! ---");
                 break;
             case 2:
@@ -156,7 +156,7 @@ public class DictionaryManagement {
                         if(n== 1){
                             w.word_target= wor.word_target;
                             w.word_explain= wor.word_explain;
-                            docghi.ghiFile(dictionary.arrayList, "dictionaries.txt");
+                            docghi.ghiFile(dictionary.arrayList);
                             System.out.println("-----  Sửa thành công !  ------");
                         }
                         else if(n== 2){
