@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DictionaryExportToFile {
+// Hàm ghiFile(list) ghi lại từ vừa thêm vào file
     public void ghiFile(ArrayList <Word> list){
         File file= new File("dictionaries.txt");
         try (PrintWriter print = new PrintWriter(file)){
@@ -17,6 +18,7 @@ public class DictionaryExportToFile {
             System.out.println("File trống!");
         }
     }
+// Hàm docFile() đọc dữ liệu từ file
     public ArrayList docFile(){
         File file= new File("dictionaries.txt");
         ArrayList<Word> list = new ArrayList<>();
