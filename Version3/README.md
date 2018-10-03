@@ -10,7 +10,7 @@
       <b>DictionaryManagement.java</b><br>
   </li>
    <li>
-      <b>DictionaryCommandline.java</b><br><hr>
+      <b>DictionaryCommandline.java</b><br>
   </li>
 	<li>
       <b>DictionaryExportToFile.java</b><hr>
