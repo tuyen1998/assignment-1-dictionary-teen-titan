@@ -6,7 +6,8 @@ import java.util.Scanner;
 
 public class DocGhiDuLieu {
     public void ghiFile(ArrayList <Word> list){
-        try (PrintWriter print = new PrintWriter(new File("dictionaries.txt"))){
+        File file= new File("dictionaries.txt");
+        try (PrintWriter print = new PrintWriter(file)){
             for(Word i: list){
                 print.println(i.getWord_target());
                 print.println(i.getWord_explain());
@@ -17,8 +18,9 @@ public class DocGhiDuLieu {
         }
     }
     public ArrayList docFile(){
+        File file= new File("dictionaries.txt");
         ArrayList<Word> list = new ArrayList<>();
-        try(Scanner scan = new Scanner(new File("dictionaries.txt"))) {
+        try(Scanner scan = new Scanner(file)) {
             while(scan.hasNext()){
                 Word w = new Word();
                 w.setWord_target(scan.nextLine());
