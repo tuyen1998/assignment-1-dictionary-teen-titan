@@ -10,14 +10,14 @@ import java.util.function.UnaryOperator;
 
 public class DictionaryManagement {
     Dictionary dictionary= new Dictionary();
-    DocGhiDuLieu docghi= new DocGhiDuLieu();
+    DictionaryExportToFile docghi= new DictionaryExportToFile();
     Scanner scan = new Scanner(System.in);
     private int dem= 1;
     
     public DictionaryManagement() {
         dictionary.arrayList= docghi.docFile();
     }
-// Phương thức insertFromCommandline()
+// Hàm insertFromCommandline()
     public void insertFromCommandline(){
         int n = 0;
         System.out.print("English: ");
@@ -94,8 +94,7 @@ public class DictionaryManagement {
             }
         }
     }
-// So sanh giống nhau
-// Phương thức xóa từ đã nhập
+// Hàm xóa tất cả từ đã nhập
     public void deleteFromCommandline(){
         // Xóa toàn bộ từ trong arraylist
         System.out.println("Bạn chắc chắn chứ");
@@ -118,7 +117,7 @@ public class DictionaryManagement {
                 break;
         }
     }
-// Hàm sửa từ
+// Hàm suaTu() để sửa từ đã chọn
     public void suaTu(){
         int n = 0;
         System.out.print("English: ");
@@ -172,7 +171,7 @@ public class DictionaryManagement {
             }
         }
     }
-// Hàm tìm kiếm
+// Hàm tìm kiếm dictionaryLookup()
    public void dictionaryLookup(){
        // Nhập word_target và word_explain
         String seach= scan.nextLine();
