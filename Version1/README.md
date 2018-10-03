@@ -15,7 +15,7 @@
 			public void setWord_explain(String word_explain)<br>
 		</ol>
   	</li>
-</ul>
+</ul> <hr>
 <b>II.Dictionary.java<br></b>
 <ul>
   	<li>
@@ -24,7 +24,7 @@
 			ArrayList<Word> arrayList= new ArrayList<Word>()
 		</ol>
   	</li>
-</ul>
+</ul> <hr>
 <b>III.DictionaryManagement.java<br></b>
 <ul>
   	<li>
@@ -45,8 +45,8 @@
 			- Hiển thị toàn bộ từ đã thêm.
 		</ol>
   	</li>
-</ul>
-<b>IV.DictionaryCommandline.java<hr></b>
+</ul> <hr>
+<b>IV.DictionaryCommandline.java</b>
 <ul>
    	<li>
       		1. Hàm showAllWords()
@@ -66,4 +66,4 @@
 			public static void main(String[] args)
 		</ol>
   	</li>	
-</ul>
+</ul> <hr>
