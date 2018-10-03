@@ -8,18 +8,14 @@
 		</ol>
 		2. Member:
 		<ol>
-			<li>
-      				<b>Họ và tên: Cao Đức Huân<b> <br>
-      				<b>MSV: 16021388<b> <hr>
-  			</li>
-  			<li>
-      				<b>Họ và tên: Hoàng Văn Thắng<b> <br>
-      				<b>MSV: 16021417<b>
-			</li> 
+			Họ và tên: Cao Đức Huân <br>
+			MSV: 16021388 <br>
+			Họ và tên: Hoàng Văn Thắng<br>
+			MSV: 16021417<br>
 		</ol>
   	</li>
 </ul> <hr>
-<h3>III. DictionaryManagement.java<br></h3>
+<h3>II. DictionaryManagement.java<br></h3>
 <ul>
   	<li>
 		1. Version1: Phiên bản từ điển command line sơ khai.
