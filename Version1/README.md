@@ -1,7 +1,7 @@
 <h1 align="center"> 
 	Version1: Phiên bản từ điển command line sơ khai.
 </h1>
-![alt](http://http://mikemclin.net/mmwp/wp-content/uploads/2013/03/markdown-syntax-language.png)
+     ![alt](http://http://mikemclin.net/mmwp/wp-content/uploads/2013/03/markdown-syntax-language.png)
 <h3>I. Word.java<br></h3>
 <ul>
 	<li>
