@@ -1,6 +1,4 @@
-<p align="center">
-	<b>Version1: Phiên bản từ điển command line sơ khai.</b>
-</p>
+## Version1: Phiên bản từ điển command line sơ khai.<hr>
 <b>I. Word.java<br></b>
 <ul>
 	<li>
