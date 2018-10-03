@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class DictionaryCommandline {
     Dictionary dictionary= new Dictionary();
     DictionaryManagement dictionaryManagement= new DictionaryManagement();
-    DocGhiDuLieu docghi= new DocGhiDuLieu();
+    DictionaryExportToFile docghi= new DictionaryExportToFile();
     private int dem= 1;
     int n;
     
@@ -15,7 +15,7 @@ public class DictionaryCommandline {
         dictionary.arrayList= docghi.docFile();
     }
     
-// Phương thức showAllWords()
+// Hàm showAllWords() gọi lại hàm hienThiTu() của class DictionaryManagement để hiển thị toàn bộ từ đã thêm.
     public void showAllWords(){
         System.out.println("----------------------------------");
         System.out.println("No   |English    |Vietnamese");
@@ -33,10 +33,7 @@ public class DictionaryCommandline {
         }
         dem= 1;
     }
-    public void dictionarySearcher(){
-        dictionaryManagement.dictionaryLookup();
-    }
-// Phương thức dictionaryAdvanced() 
+// Hàm dictionaryAdvanced() 
     public void dictionaryAdvanced(){
         Scanner scan = new Scanner(System.in);
         System.out.println("Nhập 1: Thêm từ.");
@@ -80,7 +77,7 @@ public class DictionaryCommandline {
             }
             else {
                 System.out.print("Nhập từ cần tìm: ");
-                this.dictionarySearcher();
+                dictionaryManagement.dictionaryLookup();
             }
             System.out.println("==================================");
             break;
