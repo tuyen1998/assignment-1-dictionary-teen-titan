@@ -17,7 +17,7 @@
 		</ol>
   	</li>
 </ul> <hr>
-<h3>II. DictionaryManagement.java<br></h3>
+<h3>II. Dictionary<br></h3>
 <li>
 	1. Version1: Phiên bản từ điển command line sơ khai.
 	<ol>
