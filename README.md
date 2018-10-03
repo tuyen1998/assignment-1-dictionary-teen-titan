@@ -6,15 +6,14 @@
 		<ol>
 			Teen titan
 		</ol>
+  	</li>
+	<li>
 		2. Member:
 		<ol>
-			----------------------- <br>
 			Họ và tên: Cao Đức Huân <br>
 			MSV: 16021388 <br>
-			----------------------- <br>
 			Họ và tên: Hoàng Văn Thắng<br>
-			MSV: 16021417<br>
-			----------------------- <br>
+			MSV: 16021417 <br>
 		</ol>
   	</li>
 </ul> <hr>
@@ -25,16 +24,26 @@
 		<ol>
 			Link: https://github.com/UET-INT2204-12-fall-18/assignment-1-dictionary-teen-titan/tree/master/Version1
 		</ol>
+  	</li>
+	<li>
 		2. Version2: Phiên bản từ điển command line cải tiến lần 1.
 		<ol>
 			Link: Link: https://github.com/UET-INT2204-12-fall-18/assignment-1-dictionary-teen-titan/tree/master/Version3
 		</ol>
+  	</li>
+	<li>
 		3. Version3: Phiên bản từ điển command line cải tiến lần 2.
 		<ol>
 			Link: https://github.com/UET-INT2204-12-fall-18/assignment-1-dictionary-teen-titan/tree/master/Version3
 		</ol>
+  	</li>
+	<li>
 		4. Version4: Phiên bản từ điển giao diện đồ họa sơ khai. <br>
+  	</li>
+	<li>
 		5. Version5: Phiên bản từ điển giao diện đồ họa nâng cao. <br>
+  	</li>
+	<li>
 		6. Version6: Phiên bản từ điển giao diện đồ họa cao cấp. <br>
   	</li>
 </ul> <hr>
