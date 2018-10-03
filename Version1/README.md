@@ -1,4 +1,4 @@
-## Version1: Phiên bản từ điển command line sơ khai.<hr>
+<h2> Version1: Phiên bản từ điển command line sơ khai. </h2><hr>
 <b>I. Word.java<br></b>
 <ul>
 	<li>
