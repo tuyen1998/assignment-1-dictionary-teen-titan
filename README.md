@@ -8,10 +8,13 @@
 		</ol>
 		2. Member:
 		<ol>
+			----------------------- <br>
 			Họ và tên: Cao Đức Huân <br>
 			MSV: 16021388 <br>
+			----------------------- <br>
 			Họ và tên: Hoàng Văn Thắng<br>
 			MSV: 16021417<br>
+			----------------------- <br>
 		</ol>
   	</li>
 </ul> <hr>
@@ -30,14 +33,8 @@
 		<ol>
 			Link: https://github.com/UET-INT2204-12-fall-18/assignment-1-dictionary-teen-titan/tree/master/Version3
 		</ol>
-		4. Version4: Phiên bản từ điển giao diện đồ họa sơ khai.
-		<ol>
-		</ol>
-		5. Version5: Phiên bản từ điển giao diện đồ họa nâng cao.
-		<ol>
-		</ol>
-		6. Version6: Phiên bản từ điển giao diện đồ họa cao cấp.
-		<ol>
-		</ol>
+		4. Version4: Phiên bản từ điển giao diện đồ họa sơ khai. <br>
+		5. Version5: Phiên bản từ điển giao diện đồ họa nâng cao. <br>
+		6. Version6: Phiên bản từ điển giao diện đồ họa cao cấp. <br>
   	</li>
 </ul> <hr>
