@@ -1,0 +1,30 @@
+Match
+Tran dau
+Pitch
+San thi dau
+Referee
+Trong tai
+Linesman
+Trong tai bian
+Goalkeeper
+Thu mon
+Defender
+Hau ve
+Midfielder
+Tien ve
+Attacker
+Tien dao
+Skipper
+Doi truong
+Substitute
+Du bi
+Coach
+Huan luyen vien
+Foul
+Gay loi
+Full- time
+Het gio
+Extra time
+Hiep phu
+Offside
+Viet vi
